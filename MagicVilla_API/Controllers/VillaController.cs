@@ -49,7 +49,7 @@ namespace MagicVilla_API.Controllers
                 return BadRequest(villaDto);
             }
          
-            if (villaDto.Id == 0)
+            if (villaDto.Id > 0)
             {
                 return StatusCode(StatusCodes.Status400BadRequest);
             }
