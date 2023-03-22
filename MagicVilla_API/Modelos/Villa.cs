@@ -1,5 +1,5 @@
 ﻿namespace MagicVilla_API.Modelos
-{
+{     //PROPIEDADES
     public class Villa
     {
         public int Id { get; set; }

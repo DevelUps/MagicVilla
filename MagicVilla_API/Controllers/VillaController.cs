@@ -10,7 +10,7 @@ namespace MagicVilla_API.Controllers
     [ApiController]
     public class VillaController : ControllerBase
     {
-        //Aqui se sampan los primeros metodos
+        //aqui estan todos los endpoints que se van creando con su respectivo verbos
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<VillaDTO>> GetVillas() 
@@ -43,7 +43,7 @@ namespace MagicVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<VillaDTO> CrearVilla([FromBody] VillaDTO villaDto)
-        {
+        {   //validaciones del endpont de verbo post
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
