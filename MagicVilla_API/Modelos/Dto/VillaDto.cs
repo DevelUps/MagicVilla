@@ -9,7 +9,9 @@ namespace MagicVilla_API.Modelos.villaDto
         [Required]
         [MaxLength(35)]
         public string Nombre { get; set; }
-        
+
+        public string Detalle { get; set; }
+
         [Required]
         public double Tarifa { get; set; }
 
